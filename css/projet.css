@@ -25,11 +25,17 @@ nav{
 }
 
 article{
-    border: solid 2px black;
+    border: solid 5px rgb(148, 171, 208);
     border-radius: 20px;
-    height: 200px;
+    height: 220px;
     width: 800px;
     display: flex;
     margin: 20px;
     margin-top: 40px;
+    padding: 15px;
+}
+article p {
+    margin: 10px;
+    align-items:self-start;
+    color: rgb(148, 171, 208);
 }
