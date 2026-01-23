@@ -1,0 +1,37 @@
+body{
+    margin: 0 ;
+  
+}
+.boite{
+   margin-top: 35%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+a.coquillage{
+    width: 18%;
+    margin-right: -50px;
+    margin-bottom: 10px;
+
+}
+a:hover{
+    width: 30%;
+}
+
+.bandeau{
+    position: absolute;
+}
+p{
+padding: 10px;
+height: 300px;
+width: 250px;
+}
+.espace{
+    width: 100px;
+}
+img{
+    width: 100%;
+    justify-self: center;
+    display: flex;
+    z-index: -2;
+}
