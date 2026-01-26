@@ -6,7 +6,7 @@ export default function Projet() {
 
     <> {/* Début du fragment obligatoire */}
   
-
+    <h1> PROJECTS </h1>
       <h2>2024</h2>
 
       <div className="déco">
@@ -21,9 +21,9 @@ export default function Projet() {
           ></iframe>
           <p className="titre_video">Titre: Mon premier site web</p>
           <div className="description">
-            <p>Titre: Mon premier site web</p>
-            <p>Date : 10/12/2025</p>
-            <p>Description :</p>
+            <p> <samp>Titre:</samp> Mon premier site web</p>
+            <p> <samp>Date :</samp> 10/12/2025</p>
+            <p> <samp>Description :</samp></p>
             <p>haefbuaqbfiabfiaqbfiqebfiqebfiue</p>
             <p>en cfkzednvzkjvbkzb vkjzbvvlbskdv</p>
           </div>

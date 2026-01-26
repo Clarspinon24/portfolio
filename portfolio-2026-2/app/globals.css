@@ -18,11 +18,19 @@
     --foreground: #ededed;
   }
 }
+samp {
+  font-weight: bold;
+  font-size: 15px;
+}
 
-
-h2{
+h2, h1{
     display: flex;
     justify-self: center;
+    color:  #4885A8;
+
+}
+p{
+    color: #39a3ac;
 }
 .banderol{
     background-color: white;
@@ -86,7 +94,7 @@ nav{
 }
 
 article{
-    border: solid 5px  #83D9F3;
+    border: solid 10px  #85d4dc;
   
     border-radius: 20px;
     height: 220px;
@@ -102,7 +110,7 @@ article{
      
     border-radius: 30px;
     margin: 10px;
-    width: 820px; 
+    width: 830px; 
      display: flex;
     justify-self: center;  
     background-color: white;
@@ -142,7 +150,7 @@ article{
     margin-left: 0px;
     position: fixed;
     box-shadow: 2px 2px 2px 1px #13202C;
-    
+    display: none;
 }
 .titre_video{
     display: none;
@@ -173,8 +181,8 @@ article{
     flex-direction: column;
    }
    .déco{
-     width: 300px;
-     height: 290px;
+     width: 310px;
+     height: 300px;
    }
    .description{
     display: none;
