@@ -19,9 +19,9 @@ export default function Nav() {
         
     <Link href="/" className="lien_page" >Accueil</Link>
 
-    <Link href="/projet" className="lien_page">Projet</Link>
+    <Link href="/projects" className="lien_page">Projet</Link>
 
-    <Link href="/story" className="lien_page">Story</Link>
+    <Link href="/about" className="lien_page">Story</Link>
 
     <Link href="/parcours" className="lien_page" >Parcours</Link>
 

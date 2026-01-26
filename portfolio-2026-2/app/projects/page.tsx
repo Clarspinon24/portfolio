@@ -1,16 +1,15 @@
 import "../globals.css";
-import Header from "@/components/Header";
 
 export default function Projet() {
   return (
 
     <> {/* Début du fragment obligatoire */}
-    <Header />
-      <h1 className="affiche">Clara Marchal</h1>
+  
+      
 
-      <div className="banderol">
-        <h2>2024</h2>
-      </div>
+      <div className="banderol"><h1 className="affiche">Clara Marchal</h1></div>
+
+      <h2>2024</h2>
 
       <div className="déco">
         <article>
@@ -54,9 +53,9 @@ export default function Projet() {
         </article>
       </div>
 
-      <div className="banderol">
+
         <h2>2025</h2>
-      </div>
+
 
       <div className="déco">
         <article>
@@ -100,9 +99,8 @@ export default function Projet() {
         </article>
       </div>
 
-      <div className="banderol">
         <h2>2026</h2>
-      </div>
+
 
       <div className="déco">
         <article>

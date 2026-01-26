@@ -26,9 +26,13 @@ h2{
 }
 .banderol{
     background-color: white;
-    padding: 5px;
     margin-bottom: 15px;
+    margin-top: 15px;
+    width: 100%;
     border: 2px solid #4885A8;
+   z-index: -10;
+   position: relative;
+    
 }
 .affiche{ 
     margin: 50px;
@@ -39,6 +43,7 @@ h2{
 body{
     margin: 0 ;
     background-color: #C8E8FD;
+    z-index: 100;
   
 }
 
@@ -71,6 +76,7 @@ nav{
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 2px 2px 2px 1px #13202C;
     text-align: center;
+ 
 }
 
 .exemple{
@@ -124,6 +130,16 @@ article{
     background-image: url('/asset/etoile_brille.png');
     cursor: pointer;
     animation: rotation 2s infinite linear;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #4885A8;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+    width: 200px;
+    margin-left: 0px;
+    position: fixed;
 }
 
 /* 1. On définit le mouvement */
