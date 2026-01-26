@@ -9,9 +9,9 @@ export default function Sidebar() {
 
     <Link href="/projects" className="lien_page">Projet</Link>
 
-    <Link href="/about" className="lien_page">Story</Link>
+    <Link href="/about" className="lien_page">Parcours</Link>
 
-    <Link href="/parcours" className="lien_page" >Parcours</Link>
+    <Link href="/contact" className="lien_page" >Contact</Link>
 
     </div>
 

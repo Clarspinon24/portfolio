@@ -1,12 +1,11 @@
+import "./globals.css";
 
-
-
-export default function Story() {
+export default function Home() {
   return (
 
     <> {/* Début du fragment obligatoire */}
    
-   <h1>Home</h1>
+   <div className="banderol"><h1 className="affiche">Clara Marchal</h1></div>
     
     </> // Fin du fragment obligatoire
   );

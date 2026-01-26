@@ -17,13 +17,13 @@ export default function Nav() {
   return (
     <nav >  
         
-    <Link href="/" className="lien_page" >Accueil</Link>
+    <Link href="/" className="lien_page" >Home</Link>
 
-    <Link href="/projects" className="lien_page">Projet</Link>
+    <Link href="/projects" className="lien_page">Projects</Link>
 
-    <Link href="/about" className="lien_page">Story</Link>
+    <Link href="/about" className="lien_page">About Me</Link>
 
-    <Link href="/parcours" className="lien_page" >Parcours</Link>
+    <Link href="/contact" className="lien_page" >Contact</Link>
 
     </nav>
 

@@ -1,13 +1,11 @@
 import "../globals.css";
+import Link from "next/link";
 
 export default function Projet() {
   return (
 
     <> {/* Début du fragment obligatoire */}
   
-      
-
-      <div className="banderol"><h1 className="affiche">Clara Marchal</h1></div>
 
       <h2>2024</h2>
 
@@ -21,6 +19,7 @@ export default function Projet() {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
+          <p className="titre_video">Titre: Mon premier site web</p>
           <div className="description">
             <p>Titre: Mon premier site web</p>
             <p>Date : 10/12/2025</p>
@@ -28,7 +27,7 @@ export default function Projet() {
             <p>haefbuaqbfiabfiaqbfiqebfiqebfiue</p>
             <p>en cfkzednvzkjvbkzb vkjzbvvlbskdv</p>
           </div>
-          <a className="etoile"></a>
+           <Link href="/projects/details" className="etoile"></Link>
         </article>
       </div>
 
@@ -42,14 +41,16 @@ export default function Projet() {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
+          <p className="titre_video">Titre: Bourse au Projet</p>
           <div className="description">
             <p>Titre: Bourse au Projet</p>
             <p>Date : 10/12/2025</p>
             <p>Description :</p>
             <p>haefbuaqbfiabfiaqbfiqebfiqebfiue</p>
             <p>en cfkzednvzkjvbkzb vkjzbvvlbskdv</p>
-          </div>
-          <a className="etoile"></a>
+          </div>  
+          
+          <Link href="/projects/details" className="etoile"></Link>
         </article>
       </div>
 
@@ -67,6 +68,7 @@ export default function Projet() {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
+          <p className="titre_video">Titre: Pokemon</p>
           <div className="description">
             <p>Titre: Pokemon</p>
             <p>Date : 10/12/2025</p>
@@ -74,7 +76,7 @@ export default function Projet() {
             <p>haefbuaqbfiabfiaqbfiqebfiqebfiue</p>
             <p>en cfkzednvzkjvbkzb vkjzbvvlbskdv</p>
           </div>
-          <a className="etoile"></a>
+           <Link href="/projects/details" className="etoile"></Link>
         </article>
       </div>
 
@@ -88,14 +90,15 @@ export default function Projet() {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
+          <p className="titre_video">Titre: Mon premier site web</p>
           <div className="description">
-            <p>Titre: Jazz In Marciac</p>
+            <p>Titre: NatureQuest</p>
             <p>Date : 10/12/2025</p>
             <p>Description :</p>
             <p>haefbuaqbfiabfiaqbfiqebfiqebfiue</p>
             <p>en cfkzednvzkjvbkzb vkjzbvvlbskdv</p>
           </div>
-          <a className="etoile"></a>
+           <Link href="/projects/details" className="etoile"></Link>
         </article>
       </div>
 
@@ -112,6 +115,7 @@ export default function Projet() {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
+          <p className="titre_video">Titre: NatureQuest</p>
           <div className="description">
             <p>Titre: NatureQuest</p>
             <p>Date : 10/12/2025</p>
@@ -119,7 +123,7 @@ export default function Projet() {
             <p>haefbuaqbfiabfiaqbfiqebfiqebfiue</p>
             <p>en cfkzednvzkjvbkzb vkjzbvvlbskdv</p>
           </div>
-          <a className="etoile"></a>
+          <Link href="/projects/details" className="etoile"></Link>
         </article>
       </div>
     </> // Fin du fragment obligatoire

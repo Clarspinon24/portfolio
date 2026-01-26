@@ -1,12 +1,11 @@
 import "../globals.css";
-import Header from "@/components/Header";
 
-export default function Story() {
+export default function Parcours() {
   return (
 
     <> {/* Début du fragment obligatoire */}
-    <Header />
-   <h1>Story</h1>
+
+   <h1>Parcours</h1>
 
     </> // Fin du fragment obligatoire
   );

@@ -63,7 +63,8 @@ body{
     border-radius: 10px;
 }
 .lien_page:hover{
-   box-shadow: 2px 2px 2px 2px #13202C;
+   box-shadow: 2px 2px 2px 2px #337686;
+   background-color: #39a3ac;
    
 }
 nav{
@@ -140,8 +141,20 @@ article{
     width: 200px;
     margin-left: 0px;
     position: fixed;
+    box-shadow: 2px 2px 2px 1px #13202C;
+    
+}
+.titre_video{
+    display: none;
 }
 
+.form_contact{
+    justify-self: center;
+    margin: 40px;
+    border:  2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
 /* 1. On définit le mouvement */
 
 @keyframes rotation {
@@ -151,4 +164,29 @@ article{
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 900px) {
+   article{
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+   }
+   .déco{
+     width: 300px;
+     height: 290px;
+   }
+   .description{
+    display: none;
+   }
+   .etoile{
+    margin-top: -40px;
+    margin-left: 173px;
+   }
+   nav{
+    display: none;
+   }
+   .titre_video{
+    display: block;
+   }
 }
