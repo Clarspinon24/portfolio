@@ -1,19 +1,10 @@
 "use client";
  
 import Link from "next/link";
-import { usePathname,  useSearchParams } from "next/navigation";
 
-import { useEffect } from "react";
  
 export default function Nav() {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
- 
-  useEffect(() => {
-    console.log(searchParams.get("v"));
-  }, [searchParams]);
 
- 
   return (
     <nav >  
         
