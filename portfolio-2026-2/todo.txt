@@ -1,0 +1,54 @@
+## Portfolio ##
+Vous allez devoir intégrer votre portfolio à l’aide de Next.js 16+ (avec App Router et TypeScript).
+
+Objectif
+Créer un portfolio professionnel qui mettra en valeur vos projets et compétences.
+
+Minimum requis
+Ce portfolio doit permettre de visualiser :
+
+votre parcours professionnel et scolaire
+vos compétences
+vos projets
+Il doit également contenir un formulaire de contact.
+
+Pensez à bien découper en composants vos éléments
+
+Fonctionnalités attendues : 
+        Intégration jusqu’au responsive
+        SEO optimisé avec les métadonnées appropriées
+        Page 404 stylisée
+
+        Page d’accueil (/) -> v
+                Introduction personnelle
+                Résumé des compétences
+                Sections principales avec animations
+        Page Projets (/projects) -> v
+                Liste des projets avec filtres 
+                Page Projet (/project/:slug)
+                Page détaillée pour chaque projet
+        Page À propos (/about) -> v
+                Parcours professionnel -> 
+                Compétences détaillées 
+        Page Contact (/contact) -> v
+                Formulaire de contact fonctionnel
+                Critères d’évaluation 
+
+        Qualité du code et architecture
+        Performance et optimisation
+        Design et expérience utilisateur
+        Responsive
+        Originalité et créativité -> v
+        Documentation du code
+Rendu et livrables
+Ce projet est à réaliser individuellement pour le 15/02/2026 à 23h59 au plus tard.
+
+Vous devez me fournir :
+
+Code source sur GitHub (a partager avec yoanncoualan)
+Site déployé (Render imposé)
+Un README comprenant :
+votre nom et prénom
+l’URL de votre site déployé
+procédure d’installation et de lancement de votre site en local
+les informations nécessaires au bon fonctionnement de votre site (.env, etc)

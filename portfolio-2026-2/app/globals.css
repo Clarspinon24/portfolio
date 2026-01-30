@@ -75,6 +75,10 @@ body{
    background-color: #39a3ac;
    
 }
+.text-detail{
+    color:#337686;
+    font-size: large;
+}
 nav{
     margin-top: 30px;
     justify-self: center;
@@ -95,7 +99,6 @@ nav{
 
 article{
     border: solid 10px  #85d4dc;
-  
     border-radius: 20px;
     height: 220px;
     width: 750px;
@@ -120,13 +123,13 @@ article{
     margin-left: 20px;
 }
 
-.etoile{
+
+.etoile {  
     margin-top:-10px ;
-    margin-left: 150px;
-}
-.etoile {
+    margin-left: 680px;
     display: block; /* ou inline-block */
     width: 70px; 
+    position: absolute;
     height: 70px;
     background-image: url('/asset/etoile.png'); 
     background-size: contain; /* contain est souvent mieux pour des icônes */
@@ -163,7 +166,105 @@ article{
     border-radius: 10px;
     padding: 15px;
 }
-/* 1. On définit le mouvement */
+.illu{
+    height: 200px;
+    width: 400px;
+}
+.details{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    width: 600px;
+}
+.video{
+    height: 350px;
+}
+.retour{
+    margin: 30px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #337686;
+    background-color: #39a3ac;
+}
+/* About */
+.background{
+    position: absolute;
+    opacity: 0.2;
+}
+/* Style commun à tous les boutons */
+.block {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+    width: 200px;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: #4885A8;
+    cursor: pointer; /* Petit plus pour le confort */
+}
+
+/* Différenciation par position ou couleur */
+#item1 {
+    margin-top: 780px;
+    margin-left: 80px;
+    padding: 30px;
+    position: absolute; 
+}
+
+#item2 {  
+    margin-top: 790px;
+    margin-left: 505px;
+    padding: 30px;
+    position: absolute; 
+}
+
+#item3 {
+    margin-top: 790px;
+    margin-left: 1005px;
+    padding: 30px;
+    position: absolute; 
+}
+.item4{
+    margin-top: 750px;
+    margin-left: 1205px;
+    padding: 30px;
+    position: absolute; 
+    
+}
+.item5{
+    margin-top: 790px;
+    margin-left: 505px;
+    padding: 30px;
+    position: absolute; 
+    
+}
+.item6{
+    margin-top: 790px;
+    margin-left: 505px;
+    padding: 30px;
+    position: absolute; 
+    
+}
+.item8{
+    margin-top: 790px;
+    margin-left: 505px;
+    padding: 30px;
+    position: absolute; 
+}
+.item9{
+    margin-top: 790px;
+    margin-left: 505px;
+    padding: 30px;
+    position: absolute; 
+}
+
+
+
 
 @keyframes rotation {
   from {
@@ -184,17 +285,21 @@ article{
      width: 310px;
      height: 300px;
    }
-   .description{
+   .video{
     display: none;
    }
    .etoile{
-    margin-top: -40px;
+    margin-top: 160px;
     margin-left: 173px;
    }
    nav{
     display: none;
    }
-   .titre_video{
-    display: block;
+
+   .description{
+    margin: 0px;
+   }
+   .illu{
+    display: none;
    }
 }

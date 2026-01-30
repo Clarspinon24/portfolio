@@ -1,0 +1,41 @@
+[
+  {
+    "titre":" Mon premier site web",
+    "date_debut": "2024",
+    "date_fin": "2025",
+    "description" :"Mon premier site fait par moi même de A à Z, je l'ai fait en 1 ans",
+    "video":"https://www.youtube.com/embed/r8Jd-Z3Debo",
+    "image": "/asset/b1.png"
+          
+  },
+
+  {
+    "titre":" Projet Transversal ",
+    "date_debut": "10/04/2025 ",
+    "date_fin": "22/05/2025 ",
+    "description" :"this is a project to make a website for the promotion of our realisations as a team about the festival Jazz In Marciac.",
+    "video":"https://www.youtube.com/embed/WsUCny970qc?si=UT48XeEc2LnwKjpJ" ,
+    "lien" :"https://github.com/Lohos06/Jazz_In_Marciac",
+    "image": "/asset/jazz_in_marciac.png"
+  },
+
+  {
+    "titre":" Projet Fin d'année ",
+    "date_debut": "10/04/2025 ",
+    "date_fin": "22/05/2025 ",
+    "description" :"site qui permet d'ouvrir des boosters Pokemon, utilisation de l'API Pokeapi",
+    "video":"https://youtube.com/embed/iukaQfE71R4",
+    "lien" :"https://github.com/Clarspinon24/Marchal_Clara_G1_initPHPsql",
+     "image": "/asset/Pokemon.png"
+  },
+
+  {
+    "titre":" Bourse Au Projet (BAP) ",
+    "date_debut": "9/10/2025 ",
+    "date_fin": "9/01/2025 ",
+    "description" :"Ce projet consiste à créer un site web moderne et immersif dédié à une street artiste.",
+    "video":"https://youtube.com/embed/fNZiUldpTA8",
+    "lien" :"https://github.com/RayaneLaidi/BAP_CaroleB",
+    "image": "/asset/caroleb2.png"
+  }
+]

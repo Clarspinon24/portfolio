@@ -1,9 +1,14 @@
 import Link from "next/link";
  
 export default function Sidebar() {
+
+  {/* if button click change class side bar en display block */}
  
   return (
-    <div className="sidebar" >  
+    <>
+     <button>menu</button>
+     <div className="sidebar" >  
+  
         
     <Link href="/" className="lien_page" >Accueil</Link>
 
@@ -14,6 +19,8 @@ export default function Sidebar() {
     <Link href="/contact" className="lien_page" >Contact</Link>
 
     </div>
+    </>
+
 
     
   );
