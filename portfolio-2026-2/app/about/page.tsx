@@ -6,10 +6,10 @@ export default function Parcours() {
 
     <> {/* Début du fragment obligatoire */}
 
-   <h1>Parcours</h1>
+   <h1>About me</h1>
         <Image 
         className="background"
-        src="/asset/parcours.png"
+        src="/asset/bg2.png"
         alt="Picture of way to go the job developer full-stack"
         width={1600}
         height={950}
@@ -40,7 +40,7 @@ export default function Parcours() {
 </button>
 
 <button id="item7" className="block">
-Stage Professionnalisant
+Stage  2-4 mois
 </button>
 
 <button id="item8" className="block">
