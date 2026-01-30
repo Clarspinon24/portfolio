@@ -7,11 +7,18 @@ export default function Contact() {
     <> {/* Début du fragment obligatoire */}
 
    <h1>Contact</h1>
-    <Form action="/search">
-      {/* On submission, the input value will be appended to
-          the URL, e.g. /search?query=abc */}
-      <input name="query" />
-      <button type="submit">Submit</button>
+    <Form action="">
+      
+      <input type="text" name ="pseudo" placeholder="pseudo"/>
+      <input type="email" name="email" placeholder="email"/>
+      <input type="password" name="password" placeholder="mot de passe"/>
+      <textarea 
+        id="message" 
+        name="message" 
+        placeholder="Message"
+        className="block-message">
+      </textarea>
+      <button type="submit">Envoyer le message</button>
     </Form>
     </> // Fin du fragment obligatoire
   );

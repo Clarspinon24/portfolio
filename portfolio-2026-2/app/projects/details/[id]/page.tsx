@@ -26,11 +26,19 @@ import Link from "next/link";
             ></iframe> 
 
         
-           <div className="description">
+           <div className="description">   
+            
+            {projet.video && ( 
+              <Link className="text-detail" href={projet.video}>
+                Lien de la vidéo 
+              </Link>
+            )}
                 <p className="text-detail">Date de  début : {projet.date_debut}</p>
                 <p className="text-detail">Date de fin : {projet.date_fin}</p>
                 <p className="text-detail"> Description : {projet.description}</p>
-          {projet.lien && ( /* Pour executer même si le lien projet n'est pas défini*/
+       
+
+          {projet.lien && ( 
               <Link className="text-detail" href={projet.lien}>
                 lien GitHub
               </Link>
