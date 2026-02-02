@@ -6,8 +6,12 @@ export default function Sidebar() {
  
   return (
     <>
-     <button>menu</button>
-     <div className="sidebar" >  
+      <button className="Launch">
+      <p className="text">Menu</p>
+      <div className="background"></div>
+   </button>
+   
+     <div className="sidebar" >   
   
         
     <Link href="/" className="lien_page" >Accueil</Link>

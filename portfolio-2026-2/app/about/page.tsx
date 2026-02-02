@@ -7,7 +7,18 @@ export default function Parcours() {
     <> {/* Début du fragment obligatoire */}
 
    <h1>About me</h1>
-        <Image 
+    <div className="text-about">
+    <p>I am currently a student at IIM Digital School, specializing in Web Development.
+     Passionate about solving complex problems, I have developed solid skills in Next.js 
+     and various other frameworks through my academic projects. I am recognized for my ability
+    to collaborate effectively within a team and for my serious commitment to my professional projects.</p>
+
+    <p>My professional goal is to join an innovative company as a Full-stack Developer.
+      I want to put my creativity to work on projects that have a real impact on users.
+      With this same goal in mind, I aspire to deepen my knowledge of web accessibility.</p>
+    </div>
+
+        {/* <Image 
         className="background"
         src="/asset/bg2.png"
         alt="Picture of way to go the job developer full-stack"
@@ -46,7 +57,7 @@ Stage  2-4 mois
 <button id="item8" className="block">
   alternance
 </button>
-
+ */}
 
     
 
