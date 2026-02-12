@@ -7,16 +7,16 @@ import { NextResponse } from "next/server";
 const secretKey = process.env.JWT_SECRET;
 const key = new TextEncoder().encode(secretKey);
 
-// Create the JWT
+
 export async function encrypt(payload: any) {
   return await new SignJWT(payload)
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
-    .setExpirationTime(Date.now() + 60 * 60 * 1000) // JWT expiration (1 hour)
+    .setExpirationTime(Date.now() + 60 * 60 * 1000) 
     .sign(key);
 }
 
-// Read the JWT
+
 export async function decrypt(input: string): Promise<any> {
   try {
     const { payload } = await jwtVerify(input, key, {
@@ -29,7 +29,7 @@ export async function decrypt(input: string): Promise<any> {
   }
 }
 
-// Create the cookie
+
 export async function createCookie(sessionData: object) {
   const encryptedSessionData = await encrypt(sessionData);
   const cookie = await cookies();
@@ -41,10 +41,9 @@ export async function createCookie(sessionData: object) {
   });
 }
 
-// Destroy the cookie
 export async function logout() {
   const cookie = await cookies();
-  // Destroy the session
+
   cookie.set("session", "", { expires: new Date(0) });
 }
 
@@ -60,7 +59,6 @@ export async function checkAuth() {
   const session = await getSession();
 
   if (!session) {
-    // If no session set
     return NextResponse.json(
       { message: "User is not authenticated" },
       { status: 403 },
@@ -68,7 +66,7 @@ export async function checkAuth() {
   }
 
   if (session.exp < Date.now()) {
-    // If JWT expired
+   
     return NextResponse.json({ message: "Session expired" }, { status: 403 });
   }
 

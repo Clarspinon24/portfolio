@@ -1,31 +1,29 @@
-import Link from "next/link";
- 
-export default function Sidebar() {
+"use client"; 
 
-  {/* if button click change class side bar en display block */}
- 
+import { useState } from "react"; 
+import Link from "next/link";
+
+export default function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
-      <button className="Launch">
-      <p className="text">Menu</p>
-      <div className="background"></div>
-   </button>
-   
-     <div className="sidebar" >   
-  
-        
-    <Link href="/" className="lien_page" >Accueil</Link>
+      <button onClick={toggleSidebar} className="Launch">
+        <p className="text">Menu</p>
+        <div className="background"></div>
+      </button>
 
-    <Link href="/projects" className="lien_page">Projet</Link>
-
-    <Link href="/about" className="lien_page">Parcours</Link>
-
-    <Link href="/contact" className="lien_page" >Contact</Link>
-
-    </div>
+      <div className={`sidebar ${isOpen ? "open" : ""}`}>
+        <Link href="/" className="lien_page">Accueil</Link>
+        <Link href="/projects" className="lien_page">Projet</Link>
+        <Link href="/about" className="lien_page">Parcours</Link>
+        <Link href="/contact" className="lien_page">Contact</Link>
+      </div>
     </>
-
-
-    
   );
 }

@@ -25,8 +25,8 @@ Fonctionnalités attendues :
                 Sections principales avec animations
         Page Projets (/projects) -> v
                 Liste des projets avec filtres 
-                Page Projet (/project/:slug)
-                Page détaillée pour chaque projet
+                Page Projet (/project/:slug) → v
+                Page détaillée pour chaque projet → v
         Page À propos (/about) -> v
                 Parcours professionnel -> 
                 Compétences détaillées 
