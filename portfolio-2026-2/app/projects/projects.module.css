@@ -1,0 +1,47 @@
+.etoile {  
+    margin-top:-10px ;
+    margin-left: 680px;
+    display: block; /* ou inline-block */
+    width: 70px; 
+    position: absolute;
+    height: 70px;
+    background-image: url('/asset/etoile.png'); 
+    background-size: contain; /* contain est souvent mieux pour des icônes */
+    background-repeat: no-repeat;
+    background-position: center; /* Pour être sûr que l'image est centrée */
+    flex-shrink: 0; /* Empêche l'étoile de s'écraser si le texte est trop long */
+}
+
+.etoile:hover {
+    background-image: url('/asset/etoile_brille.png');
+    cursor: pointer;
+    animation: rotation 2s infinite linear;
+}
+
+.déco{
+     border: solid 5px  #4885A8;
+     
+    border-radius: 30px;
+    margin: 10px;
+    width: 830px; 
+     display: flex;
+    justify-self: center;  
+    background-color: white;
+}
+
+.description{
+    margin-left: 20px;
+}
+.description p{
+    font-size: 20px;
+}
+
+.illu{
+    height: 200px;
+    width: 400px;
+}
+
+
+.titre_video{
+    display: none;
+}
