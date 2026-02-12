@@ -2,6 +2,8 @@ import projetsData from "@/data/projets.json";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
+import styles from "../details.module.css";
+
 
  export default async function Details({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
@@ -10,7 +12,7 @@ import Link from "next/link";
     if (!projet) return notFound();
 
   return (
-    <>
+    <div className="{styles.container}">
       <Link href="/projects" className="retour">← retour</Link>
         <h1>{projet.titre}</h1>
         <div className="details">  
@@ -48,6 +50,6 @@ import Link from "next/link";
           
           </div>
         
-  </>
+  </div>
         );
 }

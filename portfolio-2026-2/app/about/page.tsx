@@ -1,4 +1,5 @@
 import "../globals.css";
+import styles from'./projects.module.css';
 {/*import Image from "next/image";*/}
 
 export default function Parcours() {

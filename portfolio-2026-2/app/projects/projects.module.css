@@ -18,13 +18,12 @@
     animation: rotation 2s infinite linear;
 }
 
-.déco{
-     border: solid 5px  #4885A8;
-     
+.deco{
+    border: solid 5px  #4885A8;
     border-radius: 30px;
     margin: 10px;
     width: 830px; 
-     display: flex;
+    display: flex;
     justify-self: center;  
     background-color: white;
 }
@@ -34,6 +33,7 @@
 }
 .description p{
     font-size: 20px;
+     margin: 10px;
 }
 
 .illu{
@@ -44,4 +44,49 @@
 
 .titre_video{
     display: none;
+}
+.card { 
+    border: solid 10px  #85d4dc;
+    border-radius: 20px;
+    height: 220px;
+    width: 750px;
+    margin: 20px;
+    padding: 10px;
+     display: flex;
+    justify-self: center;  
+  
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+   .deco{
+     width: 310px;
+     height: 300px;
+   }
+   .video{
+    display: none;
+   }
+   .etoile{
+    margin-top: 160px;
+    margin-left: 173px;
+   }
+    .card{
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+   }
+   .illu{
+    display: none;
+   }
+    .description{
+    margin: 0px;
+   }
 }
