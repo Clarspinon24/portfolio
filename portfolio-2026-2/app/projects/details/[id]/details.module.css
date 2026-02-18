@@ -1,8 +1,17 @@
-.text-detail{
+.text_detail{
     color:#337686;
      font-size: 25px;
 }
 
+.fond_pro{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top:-12px;
+    z-index : -3;
+    width: 100vw ;
+    height: 120vw;
+}
 .details{
     display: flex;
     justify-self: center;
@@ -21,6 +30,30 @@
     background-color: #39a3ac;
 }
 
-.video{
-    height: 350px;
+.video {
+  width: 50%;
+  aspect-ratio: 16 / 9; 
+  border-radius: 20px;   
+  border: none;
+  margin-left:25%;
+
+}
+
+.description{
+    padding: 15px;
+    margin-left: -60px;
+    justify-self: center;
+    width: 45%;
+}
+    
+@media screen and (max-width: 900px) {
+    .video {
+        width: 95%;
+        margin-left:3% ;
+}
+    .description{
+        padding: 15px;
+        margin-left: 0px;
+        justify-self: center;
+    }
 }

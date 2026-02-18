@@ -27,7 +27,7 @@ h2, h1{
     display: flex;
     justify-self: center;
     color:  #4885A8;
-    font-size: 25px;
+  
 
 }
 p{
@@ -38,9 +38,16 @@ p{
     width: 400px;
     margin: 30px;
     padding: 5px;
-    border:  3px solid rgb(255, 255, 255);
+    border:  3px solid transparent;
+    background-color: rgba(255, 255, 255, 0.396);
     border-radius: 10px;
     padding: 15px;
+    
+}
+
+.text-home p{    
+color: black;
+    
 }
 .banderol{
     background-color: white;
@@ -59,7 +66,7 @@ p{
     top:-12px;
     z-index : -3;
     width: 100vw ;
-    height: 120vw;
+    height: 130vw;
 }
 .affiche{ 
     margin: 50px;
@@ -131,7 +138,8 @@ nav{
     overflow: hidden;
     background-color: transparent;
     display: none;
-    margin: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 
 .background {
@@ -150,6 +158,7 @@ nav{
      transition: 1s;
     text-transform: uppercase;
     color:#4885A8;
+    font-size: 15px;
 }
 
 .sidebar{
@@ -199,6 +208,4 @@ nav{
     border: transparent;
 
    }
-
-
 }
