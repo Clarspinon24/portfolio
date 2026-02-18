@@ -10,7 +10,7 @@ export default function Home() {
          <img
       className="siren"
       src="/asset/Siren2.png"
-      alt="Picture of a siren draw by me"
+      alt="Portfolio"
      
     />
     <div className="text-home">
