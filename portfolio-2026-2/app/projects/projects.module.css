@@ -1,5 +1,4 @@
 
-
 .fond_pro{
     position: absolute;
     margin: 0px;
@@ -46,6 +45,7 @@
 .description p{
     font-size: 20px;
      margin: 10px;
+     color: #4885A8;
 }
 
 .illu{

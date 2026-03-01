@@ -30,25 +30,10 @@ h2, h1{
   
 
 }
-p{
-    color: #39a3ac;
+p{  color: white;
       font-size: 25px;
 }
-.text-home{    
-    width: 400px;
-    margin: 30px;
-    padding: 5px;
-    border:  3px solid transparent;
-    background-color: rgba(255, 255, 255, 0.396);
-    border-radius: 10px;
-    padding: 15px;
-    
-}
 
-.text-home p{    
-color: black;
-    
-}
 .banderol{
     background-color: white;
     margin-bottom: 15px;
@@ -157,7 +142,7 @@ nav{
 .text {
      transition: 1s;
     text-transform: uppercase;
-    color:#4885A8;
+     color: white;
     font-size: 15px;
 }
 
@@ -187,6 +172,78 @@ nav{
     .text {
         color: white;
     }
+}
+
+.bubble {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 20px;
+  margin: 36%;
+  margin-top: 100px;
+  width: 400px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  overflow: hidden;  
+}
+
+.bubble:hover {
+  transform: scale(1.02);
+}
+
+.burst-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+
+.bubble.popped {
+  animation: bubble-burst 0.4s ease-out forwards;
+  pointer-events: none; 
+}
+
+.bubble.popped .burst-effect {
+  animation: ripple 0.5s ease-out forwards;
+}
+.bubble2{
+  justify-self: end;
+  margin-top: 700px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 35px;
+  width: 300px;
+  margin-right: 150px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  overflow: hidden; 
+  font-size: 25px;
+}
+.bubble2 a{
+ color: white;
+}
+
+@keyframes bubble-burst {
+  0% { transform: scale(1); opacity: 1; filter: blur(0); }
+  50% { transform: scale(1.1); opacity: 0.5; filter: blur(5px); }
+  100% { transform: scale(1.3); opacity: 0; filter: blur(15px); display: none; }
+}
+
+@keyframes ripple {
+  0% { width: 0; height: 0; opacity: 1; }
+  100% { width: 500px; height: 500px; opacity: 0; }
 }
     
 @media screen and (max-width: 900px) {
