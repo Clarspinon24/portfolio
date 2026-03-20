@@ -1,5 +1,5 @@
 "use client"; // Obligatoire pour le onClick
-
+import ChatBot from "@/components/ChatBot";
 import { useState } from "react";
 import "./globals.css";
 
@@ -42,6 +42,12 @@ export default function Home() {
         </ul>
         <a href="/about">lire la suite ...</a>
       </div>
+
+      <div className="chatbot">
+         <ChatBot />
+      </div>
+     
+
     </>
   );
 }

@@ -234,6 +234,11 @@ nav{
 .bubble2 a{
  color: white;
 }
+.chatbot{
+  position: absolute;
+  margin-top: -160px;
+  margin-left: 30px;
+}
 
 @keyframes bubble-burst {
   0% { transform: scale(1); opacity: 1; filter: blur(0); }
