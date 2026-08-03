@@ -1,54 +1,54 @@
 "use client";
 import styles from './contact.module.css';
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 
 export default function Contact() {
-  const [status, setStatus] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setStatus("Envoi en cours...");
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      message: formData.get("message"),
-    };
+    const emailClara = "marchal.clara95@gmail.com";
+    const sujet = `Message from Portfolio Contact Form - ${name}`;
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+    const corpsMessage =
+      `Bonjour Clara\n\n` +
+      `${message}\n\n` +
+      `Cordialement,\n` +
+      `${name}`;
 
-      if (response.ok) {
-        setStatus("Message envoyé avec succès !");
-        (e.target as HTMLFormElement).reset();
-      } else {
-        setStatus("Erreur lors de l'envoi.");
-      }
-    } catch (err) {
-      setStatus("Une erreur est survenue.");
-    }
-  }
+    window.location.href = `mailto:${emailClara}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corpsMessage)}`;
+  };
 
   return (
-    <div className={styles.contact_container} >
+    <div className={styles.container}>
       <h1>Contact</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <input type="text" name="name" placeholder="Votre nom" required  />
-        <input type="email" name="email" placeholder="Votre email" required/>
-        <textarea 
-          name="message" 
-          placeholder="Votre message"
+        <label className={styles.label} htmlFor="name">Nom :</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Votre nom"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           required
         />
-        <button type="submit" >Envoyer le message</button>
+
+        <label className={styles.label} htmlFor="message">Message :</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Votre message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        />
+
+        <button type="submit" className="button">Envoyer directement depuis votre boite mail</button>
       </form>
-      {status && <p className='status' >{status}</p>}
     </div>
   );
 }
