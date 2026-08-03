@@ -1,8 +1,7 @@
 "use client";
- 
 import Link from "next/link";
+import Contact from "@/components/Contact";
 
- 
 export default function Nav() {
 
   return (
@@ -15,10 +14,9 @@ export default function Nav() {
 
     <Link href="/about" className="lien_page">About Me</Link>
 
-    <Link href="/contact" className="lien_page" >Contact</Link>
-
     </nav>
     
+    <Contact />
     
     </>
   

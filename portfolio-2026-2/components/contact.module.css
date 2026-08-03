@@ -3,15 +3,18 @@
     font-size: 20px
 }
 .container {
-  justify-content: center;
-  max-width: 450px;
-  margin: 50px auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(100%, 450px);
   padding: 40px;
   background: rgba(255, 255, 255, 0.05); /* Effet verre */
   backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
 .container h1 {
@@ -87,4 +90,16 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+.mail{
+  width: 100px;
+}
+.mailButton{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
