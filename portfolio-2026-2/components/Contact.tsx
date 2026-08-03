@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <>
       <button
-        className={styles.mailButton}
+        className={styles.mailButton} 
         onClick={toggleMailForm}
         aria-expanded={isOpen}
         aria-controls="contactContainer"
