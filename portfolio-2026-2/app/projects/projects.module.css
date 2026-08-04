@@ -1,4 +1,8 @@
-
+.article{
+    margin-left: auto;  
+    margin-right: auto;
+    width:60%;
+}
 .fond_pro{
     position: absolute;
     margin: 0px;
@@ -8,7 +12,12 @@
     width: 100vw ;
     height: 120vw;
 }
-
+.titre{
+    text-align: center;
+    width: 240px;
+    margin-left: auto;  
+    margin-right: auto;
+}
 .etoile {  
     margin-top:-10px ;
     margin-left: 680px;
@@ -32,11 +41,12 @@
 .deco{
     border: solid 5px  #4885A8;
     border-radius: 30px;
-    margin: 10px;
+    margin-bottom: 30px;
     width: 830px; 
     display: flex;
     justify-self: center;  
     background-color: white;
+
 }
 
 .description{

@@ -1,0 +1,36 @@
+
+.lien_page {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: -20px;
+    position: relative;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.home_link {
+    width: 50px;
+}
+
+.projects_link {
+    width: 50px;
+}
+
+.about_link {
+    width: 70px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50px;
+    padding: 30px;
+}

@@ -9,11 +9,10 @@ export default function Projet() {
     <img
       className={styles.fond_pro}
       src="/asset/fond_projectsA4.png"
-      alt="fond imitant la mer"
-     
-    />
-        <h1>Mes Réalisations</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      alt="fond imitant la mer"/>
+
+       <div className={styles.article}>
+        <h1 className={styles.titre}>Mes Réalisations</h1>
           {projetsData.map((projet, index) => (
             <div key={index} className={styles.deco}>
               <article className={styles.card}> 
@@ -25,7 +24,6 @@ export default function Projet() {
                   <a href={projet.lien}>Voir le projet</a>
                 </div>
                 <Link href={`/projects/details/${index}`} className={styles.etoile}>
-               
                 </Link>
               </article>
             </div>
