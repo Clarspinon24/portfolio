@@ -40,9 +40,12 @@ export default function Contact() {
 
       {isOpen && (
         <div className={styles.container} id="contactContainer">
-          <h1>Contact</h1>
+          <h3 className={styles.titre}>POST CARD</h3>
+          <p>To : marchal.clara95@gmail.com</p>
+          <p>Date : {new Date().toLocaleDateString()}</p>
+          <img className={styles.timbre} src="/asset/timbre.png" alt="timbre" />
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <label className={styles.label} htmlFor="name">Nom :</label>
+            <label className={styles.label} htmlFor="name">From :</label>
             <input
               id="name"
               type="text"

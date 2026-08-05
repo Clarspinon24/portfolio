@@ -9,11 +9,10 @@
   transform: translate(-50%, -50%);
   width: min(100%, 450px);
   padding: 40px;
-  background: rgba(255, 255, 255, 0.05); /* Effet verre */
+  background: rgb(241, 240, 240);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 7px solid rgb(0, 0, 0);
   z-index: 1000;
 }
 
@@ -23,6 +22,7 @@
   margin-bottom: 25px;
   text-align: center;
   font-weight: 600;
+  animation: fadeIn 0.5s ease;
 }
 
 .container input, 
@@ -36,14 +36,16 @@
   font-size: 1rem;
   transition: all 0.3s ease;
   outline: none;
+  animation: fadeIn 0.5s ease;
 }
 .container input:focus, 
+.container button:focus,
 .container textarea:focus {
   border-color: #00295b; 
   box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.944);
 }
 
-.container textarea {
+.container textarea {     
   min-height: 120px;
   resize: vertical;
   color: black;
@@ -51,9 +53,9 @@
 
 
 .container button {
-  width: 100%;
+  width: 100%;        
   padding: 14px;
-  background: #ffffff;
+  background: #4885A8;
   color: #000000;
   border-radius: 12px;
   border: none;
@@ -65,9 +67,9 @@
 }
 
 .container button:hover {
-  background:#4885A8;
+  background:#77a4be;
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(96, 165, 250, 0.4);
 }
 
 .container button:active {
@@ -75,17 +77,18 @@
 }
 
 .container p {
+  font-size: 18px;
+  font-weight: bold;
   margin-top: 20px;
-  text-align: center;
-  color: #94a3b8;
-  font-size: 0.9rem;
   animation: fadeIn 0.5s ease;
 }
 .label {
   font-weight: bold;
+  font-size: 18px;
   margin-bottom: 15px;
   color: black;
   display: block;
+  animation: fadeIn 0.5s ease;
 }
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
@@ -93,6 +96,7 @@
 }
 .mail{
   width: 100px;
+  
 }
 .mailButton{
   background-color: transparent;
@@ -102,4 +106,17 @@
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+}
+.timbre{
+  width: 100px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  animation: fadeIn 0.5s ease;
+}
+.titre{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: -20px;
 }

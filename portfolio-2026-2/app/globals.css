@@ -18,6 +18,12 @@
     --foreground: #ededed;
   }
 }
+body{
+    margin: 0 ;
+    background-color: #3B4286;
+    z-index: 100;
+  
+}
 samp {
   font-weight: bold;
   font-size: 15px;
@@ -26,13 +32,12 @@ samp {
 h2, h1{
     display: flex;
     justify-self: center;
-    color:  #4885A8;
+    color: white;
+    margin-left: 80px;
   
 
 }
-p{  color: white;
-      font-size: 25px;
-}
+
 
 .banderol{
     background-color: white;
@@ -59,12 +64,6 @@ p{  color: white;
   
 }
 
-body{
-    margin: 0 ;
-    background-color: #C8E8FD;
-    z-index: 100;
-  
-}
 
 .menu{
     margin-top: -30px;
