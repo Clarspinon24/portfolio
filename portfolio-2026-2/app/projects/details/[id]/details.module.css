@@ -1,26 +1,16 @@
 .text_detail{
-    color:#337686;
-     font-size: 25px;
+    color: white;
+    font-size: 25px;
+    margin-left: 70px;
 }
 
-.fond_pro{
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    top:-12px;
-    z-index : -3;
-    width: 100vw ;
-    height: 120vw;
-}
-.details{
+.detail{
     display: flex;
-    justify-self: center;
-    flex-direction: column;
-    width: 600px;
+    flex-direction: row;
+    margin-top: 20px;
 }
-
 .retour{
-    margin: 30px;
+    margin-left:70px;
     position: relative;
     color: white;
     text-decoration: none;
@@ -28,23 +18,26 @@
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px #337686;
     background-color: #39a3ac;
+
 }
 
 .video {
-  width: 50%;
-  aspect-ratio: 16 / 9; 
-  border-radius: 20px;   
-  border: none;
-  margin-left:25%;
+    width: 50%;
+    aspect-ratio: 16 / 9; 
+    border-radius: 20px;   
+    border: none;
+    margin-left:70px;
 
 }
-
+.titre{
+    justify-content: center;
+    color: white;
+    font-size: 3em;
+    margin-top: 20px;
+}
 .description{
-    padding: 15px;
-    margin-left: -60px;
-    justify-self: center;
-    width: 45%;
-}
+    width: 40%;
+    }
     
 @media screen and (max-width: 900px) {
     .video {

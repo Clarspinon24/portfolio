@@ -5,9 +5,9 @@ import styles from './projects.module.css';
 
 export default function Projet() {
   return (
+  <>
+    <h1 className={styles.titre}>Mes Projets</h1>
     <div className={styles.container}>
-
-      <h1 className={styles.titre}>Mes Réalisations</h1>
 
       <div className={styles.article}>
           {projetsData.map((projet, index) => (
@@ -26,6 +26,7 @@ export default function Projet() {
           ))}
         </div>
       </div>
+      </>
 
   );
 }

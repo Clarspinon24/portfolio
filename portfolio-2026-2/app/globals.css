@@ -38,15 +38,14 @@ h2, h1{
 
 }
 
-
 .banderol{
     background-color: white;
     margin-bottom: 15px;
     margin-top: 15px;
     width: 100%;
     border: 2px solid #4885A8;
-   z-index: -1;
-   position: relative;
+    z-index: -1;
+    position: relative;
     
 }
 .siren{
@@ -110,9 +109,9 @@ h2, h1{
 }
 
 .text {
-     transition: 1s;
+    transition: 1s;
     text-transform: uppercase;
-     color: white;
+    color: white;
     font-size: 15px;
 }
 

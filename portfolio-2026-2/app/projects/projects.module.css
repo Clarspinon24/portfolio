@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 20px;
-    width:60%;
 }
 .fond_pro{
     position: absolute;
@@ -14,10 +13,13 @@
     height: 120vw;
 }
 .titre{
-    text-align: center;
+    justify-content: center;
     width: 240px;
     margin-left: auto;  
     margin-right: auto;
+    color: white;
+    font-size: 2.5em;
+
 }
 .etoile {  
     margin-top: 160px;
