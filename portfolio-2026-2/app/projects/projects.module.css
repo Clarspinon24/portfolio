@@ -1,6 +1,7 @@
 .article{
-    margin-left: auto;  
-    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
     width:60%;
 }
 .fond_pro{
@@ -19,8 +20,8 @@
     margin-right: auto;
 }
 .etoile {  
-    margin-top:-10px ;
-    margin-left: 680px;
+    margin-top: 160px;
+    margin-left: 173px;
     display: block; /* ou inline-block */
     width: 70px; 
     position: absolute;
@@ -41,8 +42,10 @@
 .deco{
     border: solid 5px  #4885A8;
     border-radius: 30px;
-    margin-bottom: 30px;
-    width: 830px; 
+    margin: 30px;
+
+    width: 310px;
+    height: 300px;
     display: flex;
     justify-self: center;  
     background-color: white;
@@ -50,12 +53,12 @@
 }
 
 .description{
-    margin-left: 20px;
+    margin: 0px;
 }
 .description p{
     font-size: 20px;
-     margin: 10px;
-     color: #4885A8;
+    margin: 10px;
+    color: #4885A8;
 }
 
 .illu{
@@ -71,13 +74,16 @@
     border: solid 10px  #85d4dc;
     border-radius: 20px;
     height: 220px;
-    width: 750px;
+    width: 230px;
     margin: 20px;
     padding: 10px;
-     display: flex;
+    display: flex;
+    flex-direction: wrap;
     justify-self: center;  
-  
+
 }
+
+
 
 @keyframes rotation {
   from {
@@ -89,26 +95,18 @@
 }
 
 @media screen and (max-width: 900px) {
-   .deco{
-     width: 310px;
-     height: 300px;
-   }
-   .video{
-    display: none;
-   }
-   .etoile{
-    margin-top: 160px;
-    margin-left: 173px;
-   }
-    .card{
-    width: 230px;
-    display: flex;
-    flex-direction: column;
-   }
-   .illu{
-    display: none;
-   }
-    .description{
-    margin: 0px;
-   }
+.deco{
+    width: 310px;
+    height: 300px;
+}
+.video{
+display: none;
+}
+
+.card{
+width: 230px;
+display: flex;
+flex-direction: column;
+}
+
 }
