@@ -1,0 +1,35 @@
+[
+    {
+        "intro": [
+            "Hello, Je m'appelle Clara",
+            "Je suis développeuse web",
+            "Enchantée de te rencontrer !"
+        ],
+
+        "choix": [
+            "Pourquoi tu es développeuse web ?",
+            "Quelles sont tes compétences ?",
+            "Quel est ton projet préféré et pourquoi ?"
+        ],
+
+        "1": [
+            "C'est grâce à mon association que j'ai découvert le développement web",
+            "J'ai ensuite pris la spécialité NSI en terminale pour approfondir mes connaissances",
+            "J'adore créer des sites web et des applications web, je trouve qu'il a tellement de liberté et de potentiel à faire."
+        ],
+        
+        "2": [
+            "Je maitrise les bases du développement web, notamment HTML, CSS et JavaScript",
+            "J'ai de l'expérience en React et Next.js",
+            "Mais j'ai également une part créative que j'applique autant dans le design que dans le développement pour résoudre des problèmes."
+        ],
+        "3": [
+            "J'ai adoré travailler sur un escape game chez Orange, c'était un projet très stimulant et créatif",
+            "Le but du site est de simuler au utilisateurs et developpeur aux handicaps qu'on peut rencontrer dans le monde du numérique",
+            "Je dis au handicap car ce n'est pas la personne mais la situation qui est handicapante, n'importe quipeut se retrouver bloquer si le site n'est pas accessible.",
+            "C'était enrichissant car d'en apprendre plus sur l'accessibilité et de pouvoir me mettre à la place des utilisateurs, j'ai pu me creuser la tête pour créer des parties de l'escape game à la fois ludique et éducative."
+        ]
+        
+    }
+
+]

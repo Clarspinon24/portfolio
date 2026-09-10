@@ -4,5 +4,10 @@
 .text{
     font-size: 2em;
     margin-left: 70px;
-    color: #ffffff;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid rgb(207, 171, 225);
+    padding: 20px;
+    width: 600px;
 }
