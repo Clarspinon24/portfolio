@@ -1,8 +1,25 @@
-.text_detail{
-    color: white;
-    font-size: 25px;
-    margin-left: 70px;
+.page{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: -10010;
+    width: 100%;
+    height: 100%;
 }
+.page1{
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 50%;
+    z-index: -1000;
+    
+}
+.page2{
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 50%;
+    z-index: -1000;
+}
+
 
 .detail{
     display: flex;
@@ -11,14 +28,10 @@
 }
 .retour{
     margin-left:70px;
-    position: relative;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px #337686;
-    background-color: #39a3ac;
-
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
 }
 
 .video {
@@ -30,13 +43,22 @@
 
 }
 .titre{
-    justify-content: center;
-    color: white;
+    position: relative;
     font-size: 3em;
+    margin-top: 90px;
+}
+.fond_titre{
     margin-top: 20px;
+    display: flex;
+    position: absolute;
+    justify-self: center;
+    width: 40%;
+    z-index: -10;
 }
 .description{
-    width: 40%;
+    font-size: 20px;
+    margin: 10px;
+    color: #4885A8;
     }
     
 @media screen and (max-width: 900px) {
@@ -49,4 +71,66 @@
         margin-left: 0px;
         justify-self: center;
     }
+}
+.lien{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 90px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+.image{
+    width: 50%;
+    height: 48.30%;
+    margin-left: 55px;
+    margin-top: 22%;
+    border: black 2px solid;
+    position: absolute;
+}
+.polaroid{
+    position: relative;
+    width: 65%;
+    margin-left: 20px;
+    margin-top: 70px;
+
+}
+.text_detail{
+
+    border: solid 5px  #4885A8;
+    border-radius: 30px;
+    margin-top: 130px;
+    margin-left: -160px;
+    width: 310px;
+    height: 300px;
+    display: flex;
+    justify-self: center;  
+    background-color: white;
+
+}
+.card { 
+    border: solid 10px  #85d4dc;
+    border-radius: 20px;
+    height: 220px;
+    width: 230px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: wrap;
+    justify-self: center;  
+
+}
+.cadre{
+    position: absolute;
+    z-index: -1;
+    width: 450px;
+    height: 450px;
+    margin-top: 110px;
+    margin-left: -150px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
 }

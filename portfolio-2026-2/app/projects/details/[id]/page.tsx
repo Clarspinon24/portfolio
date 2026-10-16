@@ -11,11 +11,43 @@ import styles from "./details.module.css";
     if (!projet) return notFound();
 
   return (
-    <div>
+    <div className={styles.page}>
+ <Link href="/projects" className={styles.retour}><img src="/asset/flecheg.png" alt="retour" /></Link>
+    <div className={styles.page1}>
+
+      <img  className={styles.fond_titre} src="/asset/titre.png" alt="" />
         <h1 className={styles.titre}>{projet.titre}</h1>
 
-      <Link href="/projects" className={styles.retour}>← retour</Link>
-            <div className={styles.detail}>  
+    <div className={styles.container}>
+      <div className={styles.polaroid}>
+        <img className={styles.image} src={projet.image} alt="" />
+        <img className={styles.polaroid} src="/asset/polaroid.png" alt="" />
+      </div>
+
+      <div className={styles.description}>   
+                <div className={styles.text_detail}>
+                    <article className={styles.card}> 
+                      <div className={styles.description}>
+                        <p>Description :</p>
+                        <p>{projet.description}</p>
+                      </div>
+                    </article>
+                        
+                    {projet.lien && ( 
+                      <Link className={styles.lien} href={projet.lien}>
+                        <img className={styles.lien} src="/asset/tampon_git.png" alt="lien GitHub" />
+                      </Link>
+                    )}
+                </div>
+
+                
+      </div>
+      </div>
+ 
+    </div>
+
+    <div className={styles.page2}>           
+      <div className={styles.detail}>  
                   <iframe className={styles.video}
                     src={projet.video} 
                     title={projet.titre}
@@ -23,25 +55,16 @@ import styles from "./details.module.css";
                     referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen >
                   </iframe> 
-            
-                  <div className={styles.description}>   
-                    
-                    {projet.video && ( 
-                      <Link className={styles.text_detail} href={projet.video}>
+                  
+              {projet.video && ( 
+                      <Link className={styles.lien_video} href={projet.video}>
                         Lien de la vidéo 
                       </Link>
                     )}
-                        <p className={styles.text_detail}>Date de  début : {projet.date_debut}</p>
-                        <p className={styles.text_detail}>Date de fin : {projet.date_fin}</p>
-                        <p className={styles.text_detail}> Description : {projet.description}</p>
-
-                    {projet.lien && ( 
-                      <Link className={styles.text_detail} href={projet.lien}>
-                        lien GitHub
-                      </Link>
-                    )}
-                  </div>
+           
             </div>
+      </div>
+    
     </div>
         );
 }

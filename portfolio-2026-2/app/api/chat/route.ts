@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
         messages: [
           {
             role: "system",
-            content: "Tu es un assistant de portfolio, tu reponds au questions des visiteurs sur mon contenu et mes compétences. Réponds en français de manière claire et concise.",
+            content: "Tu t'appelles Lola et tu es mon assistante de portfolio, tu reponds au questions des visiteurs sur mon contenu et mes compétences. Réponds en français de manière claire et concise.",
           },
           ...messages,
         ],
